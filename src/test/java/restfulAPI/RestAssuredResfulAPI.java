@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class RestfulAPICobaSendiri {
+public class RestAssuredResfulAPI {
     public static void main(String[] args) {
         // getAllObjects();
         // getAllObjectsByIds();

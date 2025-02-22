@@ -1,4 +1,4 @@
-package restassured;
+package restAssuredDummyJson;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.RestAssured;
@@ -84,7 +84,7 @@ public class RestAssuredImpl {
                             
         Response response = requestSpecification.log().all().get("products");
 
-        Response response2 = RestAssured
+        Response response2 = requestSpecification
                              .given()
                                  .log()
                                  .all()
