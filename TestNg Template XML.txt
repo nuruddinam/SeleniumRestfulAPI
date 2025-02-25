@@ -1,0 +1,24 @@
+1. Buka VS Code, lalu tekan Ctrl + Shift + P (Windows/Linux) atau Cmd + Shift + P (Mac).
+2. Ketik "Configure User Snippets", lalu pilih.
+3. Pilih xml.json (untuk snippet khusus XML).
+4. Tambahkan snippet berikut:
+
+{
+    "TestNG Suite XML": {
+        "prefix": "testng",
+        "body": [
+            "<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">",
+            "<suite name=\"MyTestSuite\">",
+            "    <test name=\"MyTest\">",
+            "        <classes>",
+            "            <class name=\"com.example.MyTestClass\"/>",
+            "        </classes>",
+            "    </test>",
+            "</suite>"
+        ],
+        "description": "Template otomatis untuk TestNG XML"
+    }
+}
+
+5. Simpan file JSON tersebut.
+6. Sekarang, setiap kali kamu mengetik testng dalam file XML, tekan Enter, dan template akan otomatis muncul.
